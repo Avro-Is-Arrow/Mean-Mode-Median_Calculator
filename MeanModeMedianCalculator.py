@@ -1,7 +1,8 @@
 import math
 
-listOfNumbers = [2, 43, 12, 43, 54, 43, 64, 43, 65, 87, 100, 12] # Adjust array as needed
-print(f"Array of Numbers are: {listOfNumbers}\n")
+listOfNumbers = [2, 43, 12, 43, 54, 43, 64, 43, 65, 87, 100, 12] # List array as needed
+
+print(f"List of Numbers are: {listOfNumbers}\n")
 
 #Mean Calculation
 def calculateMean(listOfNumbers: list):
