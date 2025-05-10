@@ -1,10 +1,10 @@
 import math
 
-listOfNumbers = [2, 43, 12, 43, 54, 43, 64, 43, 65, 87, 100, 12] # List array as needed
+# IMPLEMENT RANGE
+listOfNumbers = [1, 2, 3] # List array, change values as needed
 
-print(f"List of Numbers are: {listOfNumbers}\n")
 
-#Mean Calculation
+#Mean Calculation, Can be thrown off by outliers
 def calculateMean(listOfNumbers: list):
     sumOfAllElements : int = 0
     for num in listOfNumbers:
@@ -33,20 +33,21 @@ def calculateMode(listOfNumbers: list):
             
     print(f"The mode is: {keyWhichHoldsTheLargestValue}... With the amount of times it appearing being: {largestValue}")
 
-#Median Calculation
+#Median Calculation, not thrown off by outliers
 def calculateMedian(listOfNumbers):
     sortedList = sorted(listOfNumbers)
 
     if ((len(sortedList) % 2) != 0):
 
-        print(sortedList[int( ( len ( sortedList ) - 1 ) / 2 ) ])
+        print(f"Median is: {sortedList[int( ( len ( sortedList ) - 1 ) / 2 ) ]}")
 
     else:
         position1 = sortedList[(int( ( len ( sortedList ) - 1 ) / 2 )) - 1 ]
         position2 = sortedList[(int( ( len ( sortedList ) - 1 ) / 2 )) + 1 ]
         print(f"Median is: {int((position1 + position2) / 2)}")
-    
-    
+
+
+print(f"ENTIRE LIST: {listOfNumbers}\n")
 calculateMean(listOfNumbers)
 calculateMode(listOfNumbers)
 calculateMedian(listOfNumbers)
