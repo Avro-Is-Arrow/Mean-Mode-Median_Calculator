@@ -1,6 +1,8 @@
 import math
 
 # IMPLEMENT RANGE
+
+
 listOfNumbers = [1, 2, 3] # List array, change values as needed
 
 
